@@ -15,4 +15,5 @@ COPY /target/docker-java-app-example.jar /app
 EXPOSE 8080
 
 # Run jar file when the container launches
-CMD ["java", "-Xmx128m", "-Xms64m", "-jar", "docker-java-app-example.jar"]
+#CMD ["java", "-Xmx128m", "-Xms64m", "-jar", "docker-java-app-example.jar"]
+ENTRYPOINT ["java", "-Xmx128m", "-Xms64m", "-jar", "docker-java-app-example.jar"]
